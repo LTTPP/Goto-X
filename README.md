@@ -1,2 +1,2 @@
 # Goto X
-An extension for Chrome and Firefox
+Go to non-linked URL selection with one click even without domain suffix. This is an extension for Chrome and Firefox.
