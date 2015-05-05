@@ -1,34 +1,35 @@
 {
-    "manifest_version": 2,
-    "name": "Goto X",
-    "version": "1.0.0",
-    "description": "Go to non-linked URL selection with one click even without domain suffix.",
-    "homepage_url": "https://github.com/prairie/Goto-X",
-    "icons":
-    {
-        "16": "images/icon.png",
-        "48": "images/icon.png",
-        "128": "images/icon.png"
-    },
+  "manifest_version": 2,
+  "name": "Goto X",
+  "version": "1.0.0",
 
-    "background":
-    {
-        "page": "background.html"
-    },
+  "description": "Go to non-linked URL selection with one click even without domain suffix.",
+  "icons":
+  {
+      "16": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+  },
 
-    "browser_action":
-    {
-        "default_icon": "images/icon.png",
-        "default_popup": "popup.html"
-    },
+  "browser_action":
+  {
+      "default_icon": "assets/icon.png",
+      "default_popup": "popup.html"
+  },	
 
-    "options_page": "options.html",
-    "permissions":
-    [
-        "tabs",
-        "activeTab",
-        "notifications",
-        "http://*/*",
-        "https://*/*"
-    ]
+  "author": "Liu, Jianwei",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "homepage_url": "http://path/to/homepage",
+  "options_page": "options.html",
+  "permissions":
+  [
+      "tabs",
+      "activeTab",
+      "notifications",
+      "http://*/*",
+      "https://*/*"
+  ]
 }
