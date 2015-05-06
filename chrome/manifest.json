@@ -6,16 +6,17 @@
   "description": "Go to non-linked URL selection with one click even without domain suffix.",
   "icons":
   {
-      "16": "assets/icon.png",
-      "48": "assets/icon.png",
-      "128": "assets/icon.png"
+      "16": "assets/logo16.png",
+      "32": "assets/logo32.png",
+      "48": "assets/logo48.png",
+      "128": "assets/logo128.png"
   },
 
   "browser_action":
   {
-      "default_icon": "assets/icon.png",
+      "default_icon": "assets/logo38.png",
       "default_popup": "popup.html"
-  },	
+  },
 
   "author": "Liu, Jianwei",
   "background": {
