@@ -20,15 +20,16 @@
 
   "author": "Liu, Jianwei",
   "background": {
-    "scripts": ["background.js"],
+    "page": "background.html",
     "persistent": false
   },
+
   "homepage_url": "http://path/to/homepage",
   "options_page": "options.html",
   "permissions":
   [
       "tabs",
-      "activeTab",
+	  "contextMenus",
       "notifications",
       "http://*/*",
       "https://*/*"
