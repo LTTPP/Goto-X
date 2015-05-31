@@ -1,9 +1,15 @@
-if (typeof String.prototype.endsWith !== 'function') {
-	String.prototype.endsWith = function(suffix) {
-		return this.indexOf(suffix, this.length - suffix.length) !== -1;
+if (typeof String.prototype.isEmpty !== "function") {
+	String.prototype.isEmpty = function() {
+		return this === undefined || this === null || this === "";
 	};
-}
+};
 
-var isValidDomain = function(domain) {
+if (typeof String.prototype.isBlank !== "function") {
+	String.prototype.isBlank = function() {
+		return this.isEmpty() || this.trim() === "";
+	};
+};
+
+function isValidDomain(domain) {
 	return domain.endsWith(".com") || domain.endsWith(".io") || domain.endsWith(".net");
 };
