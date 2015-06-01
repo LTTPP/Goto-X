@@ -21,7 +21,7 @@
   "author": "Liu, Jianwei",
   "background": {
     "page": "background.html",
-    "persistent": false
+    "persistent": true
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],

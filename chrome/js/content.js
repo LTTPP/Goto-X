@@ -5,7 +5,7 @@ document.addEventListener("mousedown", function(event) {
 	if (event.button !== 2) {
 		return false;
 	}
-	console.log("right-button was clicked");
+	console.log("user right-clicked");
 	var selection = window.getSelection().toString();
 	console.log("selected text is '" + selection + "'");
 

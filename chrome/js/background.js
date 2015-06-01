@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(function() {
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 	console.log("received message from coontent script");
 	if (message.request === "updateContextMenu") {
-		var newTitle = selectionToTitle(message.selection);
+		var newTitle = selectionToDomainName(message.selection);
 		updateMenu(newTitle);
 		sendResponse({
 			result : "success"

@@ -12,7 +12,7 @@ function createMenu() {
 			url : selectionToUrl(info.selectionText)
 		});
 	});
-};
+}
 
 function updateMenu(title) {
 	chrome.contextMenus.update("gotoX", {
@@ -20,4 +20,4 @@ function updateMenu(title) {
 	}, function() {
 		console.log("updated X of menu 'Go to X' to '" + title + "'");
 	});
-};
+}
