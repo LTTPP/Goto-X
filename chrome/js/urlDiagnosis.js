@@ -37,6 +37,8 @@ function isValidDomain(domain) {
 			}
 		}
 		console.log("not found: compared " + i + " times");
+	} else if (domain === "localhost") {
+		return true;
 	}
 	return false;
 }
