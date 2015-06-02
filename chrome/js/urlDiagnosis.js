@@ -1,4 +1,4 @@
-var predefDomainName;
+var predefDomainName = "";
 
 // Diagnose domain name to a valid and available domain
 function selectionToUrl(selection) {
@@ -29,7 +29,7 @@ function pretreat(selection) {
 // TODO need to enhance performance
 function isValidDomain(domain) {
 	if (domain.includes(".")) {
-		var domains = JSON.parse("[\".com\",\".org\",\".net\"]");
+		var domains = getDomains();
 		for ( var i = 0; i < domains.length; i++) {
 			if (domain.endsWith(domains[i])) {
 				console.log("found: compared " + (i + 1) + " times");

@@ -1,6 +1,7 @@
 // Set up context menu at install time.
 chrome.runtime.onInstalled.addListener(function() {
 	createMenu();
+	parseDomains();
 });
 
 // Update context menu when received message from content script.

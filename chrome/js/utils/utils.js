@@ -1,6 +1,6 @@
 if (typeof String.prototype.isEmpty !== "function") {
 	String.prototype.isEmpty = function() {
-		return this === undefined || this === null || this === "";
+		return this === null || this === "";
 	};
 }
 
