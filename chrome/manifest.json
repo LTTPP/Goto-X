@@ -28,7 +28,7 @@
     "js": ["js/content.js"]
   }],
 
-  "homepage_url": "http://path/to/homepage",
+  "homepage_url": "https://github.com/prairie/Goto-X",
   "options_page": "options.html",
   "permissions":
   [
