@@ -29,7 +29,6 @@
   }],
 
   "homepage_url": "https://github.com/prairie/Goto-X",
-  "options_page": "options.html",
   "permissions":
   [
       "activeTab",
