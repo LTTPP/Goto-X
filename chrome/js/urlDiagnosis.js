@@ -1,9 +1,9 @@
-var predefDomainName = "";
+GotoX.predefDomainName = "";
 
 // Diagnose domain name to a valid and available domain
 function selectionToUrl(selection) {
-	var domain = predefDomainName;
-	predefDomainName = "";
+	var domain = GotoX.predefDomainName;
+    GotoX.predefDomainName = "";
 	if (domain.isBlank()) {
 		console.log("no pre-defined domain");
 		domain = selectionToDomainName(selection);
@@ -19,7 +19,7 @@ function selectionToDomainName(selection) {
 	selection = pretreat(selection);
 	var valid = isValidDomain(selection);
 	console.log("'" + selection + "'" + " is " + (valid ? "valid" : "invalid"));
-	return predefDomainName = valid ? selection : selection + ".com";
+	return GotoX.predefDomainName = valid ? selection : selection + ".com";
 }
 
 function pretreat(selection) {
