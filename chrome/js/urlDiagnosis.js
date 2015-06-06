@@ -23,7 +23,7 @@ function selectionToDomainName(selection) {
 }
 
 function pretreat(selection) {
-	return selection.trim().replaceAll(" ", "");
+	return selection.trim().replaceAll(" ", "").toLowerCase();
 }
 
 // TODO need to enhance performance
